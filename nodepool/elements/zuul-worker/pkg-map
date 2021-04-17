@@ -1,0 +1,10 @@
+{
+  "family": {
+    "debian": {
+      "apt-transport-https": "apt-transport-https"
+    }
+  },
+  "default": {
+    "apt-transport-https": ""
+  }
+}
