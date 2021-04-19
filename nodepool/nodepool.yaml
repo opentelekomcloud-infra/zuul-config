@@ -156,7 +156,7 @@ providers:
             memory: 2048
   - name: otc-1
     driver: openstack
-    cloud: otc_pool1
+    cloud: otcci-pool1
     boot-timeout: 120
     diskimages: &provider_diskimages
       - name: fedora-30
@@ -211,7 +211,7 @@ providers:
             key-name: nodepool
   - name: otc-2
     driver: openstack
-    cloud: otc_pool2
+    cloud: otcci-pool2
     boot-timeout: 120
     diskimages: *provider_diskimages
     pools:
@@ -223,7 +223,7 @@ providers:
         labels: *otc_labels
   - name: otc-3
     driver: openstack
-    cloud: otc_pool3
+    cloud: otcci-pool2
     boot-timeout: 120
     diskimages: *provider_diskimages
     pools:
