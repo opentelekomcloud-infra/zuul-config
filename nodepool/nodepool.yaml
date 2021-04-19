@@ -13,8 +13,8 @@ zookeeper-servers:
     port: 2281
 
 zookeeper-tls:
-  cert: /etc/nodepool/ssl/zk/client.pem
-  key: /etc/nodepool/ssl/zk/clientkey.pem
+  cert: /etc/nodepool/ssl/zk/cert.pem
+  key: /etc/nodepool/ssl/zk/key.pem
   ca: /etc/nodepool/ssl/zk/cacert.pem
 
 diskimages:
