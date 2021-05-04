@@ -1,0 +1,20 @@
+- job:
+    name: zuul-config-build-image-f34
+    description: Build a F34 image.
+    parent: zuul-config-build-image
+    vars: &zuul-f34_vars
+      docker_images:
+        - context: containers
+          dockerfile: containers/Dockerfile.f34
+          repository: opentelekomcloud/zuul-containers
+          tags: ['f34-latest']
+    files: &zuul-f34_files
+      - containers/Dockerfile.f34
+
+- job:
+    name: zuul-config-upload-image-f34
+    description: Build and upload a f34 image.
+    parent: zuul-config-upload-image
+    vars: *zuul-f34_vars
+    files: *zuul-f34_files
+
