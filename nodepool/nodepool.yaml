@@ -84,7 +84,7 @@ diskimages:
 
   - name: fedora-34
     parent: base
-    pause: true
+    pause: false
     python-path: /usr/bin/python3
     elements:
       - fedora-minimal
