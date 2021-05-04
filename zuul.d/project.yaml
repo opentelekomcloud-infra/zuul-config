@@ -1,5 +1,5 @@
 - project:
-    merge-mode: squash-mode
+    merge-mode: squash-merge
     check:
       jobs:
         - zuul-config-build-image-f34

@@ -6,5 +6,5 @@
 
 - job:
     name: zuul-config-upload-image
-    parent: build-upload-image
+    parent: otcinfra-upload-image-quay
     abstract: true
