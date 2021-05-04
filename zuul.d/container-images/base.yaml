@@ -1,0 +1,10 @@
+# Base image building jobs
+- job:
+    name: zuul-config-build-image
+    parent: build-docker-image
+    abstract: true
+
+- job:
+    name: zuul-config-upload-image
+    parent: build-upload-image
+    abstract: true

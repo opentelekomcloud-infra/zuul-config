@@ -1,0 +1,12 @@
+- project:
+    merge-mode: squash-mode
+    check:
+      jobs:
+        - zuul-config-build-image-f34
+    gate:
+      jobs:
+        - zuul-config-build-image-f34
+    post:
+      jobs:
+        - zuul-config-upload-image-f34
+
