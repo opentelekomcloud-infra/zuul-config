@@ -8,3 +8,5 @@
     name: zuul-config-upload-image
     parent: otcinfra-upload-image-quay
     abstract: true
+    vars:
+      upload_docker_image_promote: false
