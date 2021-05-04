@@ -5,7 +5,7 @@
     vars: &zuul-f34_vars
       docker_images:
         - context: containers
-          dockerfile: containers/Dockerfile.f34
+          dockerfile: Dockerfile.f34
           repository: opentelekomcloud/zuul-containers
           tags: ['f34-latest']
     files: &zuul-f34_files
