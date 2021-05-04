@@ -10,6 +10,7 @@
           tags: ['f34-latest']
     files: &zuul-f34_files
       - containers/Dockerfile.f34
+      - zuul.d/container-images/fedora.yaml
 
 - job:
     name: zuul-config-upload-image-f34
