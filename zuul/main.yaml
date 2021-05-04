@@ -71,6 +71,7 @@
           - opentelekomcloud-infra/system-config
           - opentelekomcloud-infra/test-scenarios
           - opentelekomcloud-infra/validatetoken
+          - opentelekomcloud-infra/zuul-config
           - terraform-opentelekomcloud-modules/terraform-opentelekomcloud-vpc
           #####
           - include: []
