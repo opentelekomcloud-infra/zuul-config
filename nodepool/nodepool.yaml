@@ -82,6 +82,14 @@ diskimages:
       - fedora-minimal
     release: 33
 
+  - name: fedora-34
+    parent: base
+    pause: true
+    python-path: /usr/bin/python3
+    elements:
+      - fedora-minimal
+    release: 34
+
   - name: centos-8
     parent: base
     pause: false
@@ -133,6 +141,7 @@ labels:
   - name: fedora-31
   - name: fedora-32
   - name: fedora-32-large
+  - name: fedora-34
   - name: debian-buster
     min-ready: 0
   - name: centos-8
@@ -163,6 +172,7 @@ providers:
       - name: fedora-30
       - name: fedora-31
       - name: fedora-32
+      - name: fedora-34
       - name: centos-8
       - name: debian-buster
       - name: ubuntu-bionic
@@ -193,6 +203,10 @@ providers:
           - name: fedora-32-large
             diskimage: fedora-32
             flavor-name: s2.xlarge.2
+            key-name: nodepool
+          - name: fedora-34
+            diskimage: fedora-34
+            flavor-name: s2.large.2
             key-name: nodepool
           - name: debian-buster
             diskimage: debian-buster
