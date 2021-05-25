@@ -238,7 +238,7 @@ providers:
         labels: *otc_labels
   - name: otc-3
     driver: openstack
-    cloud: otcci-pool2
+    cloud: otcci-pool3
     boot-timeout: 120
     diskimages: *provider_diskimages
     pools:
