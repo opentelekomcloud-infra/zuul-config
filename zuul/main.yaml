@@ -8,7 +8,7 @@
         config-projects:
           - opentelekomcloud-infra/zuul-project-config
           - opentelekomcloud-infra/base-jobs:
-            load-branch: main
+              load-branch: main
         untrusted-projects:
           - opentelekomcloud-infra/otc-zuul-jobs:
               extra-config-paths:
