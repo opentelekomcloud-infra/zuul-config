@@ -80,7 +80,8 @@
               - ansible/ansible
       opendev:
         untrusted-projects:
-          - zuul/zuul-jobs
+          - zuul/zuul-jobs:
+              shadow: opentelekomcloud-infra/zuul-project-config
           - include: []
             projects:
               - osf/refstack-client
