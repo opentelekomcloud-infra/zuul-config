@@ -63,6 +63,7 @@
           - opentelekomcloud-infra/customer-service-monitoring
           - opentelekomcloud-infra/dashboard
           - opentelekomcloud-infra/delatore
+          - opentelekomcloud-infra/docsportal
           - opentelekomcloud-infra/galera
           - opentelekomcloud-infra/gitstyring
           - opentelekomcloud-infra/fluentd
