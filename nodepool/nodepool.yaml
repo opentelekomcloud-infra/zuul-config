@@ -28,7 +28,7 @@ diskimages:
       - infra-package-needs
       - otc-base
     env-vars:
-      #TMPDIR: /opt/dib_tmp
+      # TMPDIR: /opt/dib_tmp
       DIB_CHECKSUM: '1'
       DIB_IMAGE_CACHE: /opt/dib_cache
       DIB_JOURNAL_SIZE: '512'
@@ -39,7 +39,6 @@ diskimages:
       ZUUL_USER_SSH_PUBLIC_KEY: |
         ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDe7Sbl2sP6gasTFCh76TRfdvNesK3ZJr6LPAnls6H92xdc0/sNVBicqtiGeop/jbmTW8VVat4UXeC1eL+XOw4fonoD+tY1V+BpHtvjFloNSqH/UNwsOixuwdePl4ROkHgnPSWZVWbR1LXAOW/3zH3ez52aTgwkso8OKvH0vucWDPh5KLOB3YpHbOQ4D3J5ohVt+4AaVJRjLHMiSTSOKB4jAnd4+jJZ6GR+G39kLQ6PS6sdPC9uNu5GikAzcLp1+11XCmMbiG0mxPnQrqiEnDTAVxsPfuyX9HoteBRdVQrHWcUUEcogqcbTvGhXWYqGKVeUpGrqIilOVP47+dRvPYDruq7tMm6oM8xeex5t4jF3rneqwqQuPKGJl9ErMk+jJUVAr97Thfy3LqoTGAYeu2Vdubwaat9T1P8twg5S8FW5prKheRYytKWNRsc0wtkIS4XPPfK4fr08T1UITjZJ8eVc+cHfziP+wXoFi9MzYd8Jmgl5sp8CwJCIcOt5GiRxqBk=
 
-
   - name: base-debuntu
     abstract: True
     parent: base
@@ -48,7 +47,7 @@ diskimages:
       DIB_DISABLE_APT_CLEANUP: '1'
       DIB_DEBOOTSTRAP_EXTRA_ARGS: '--no-check-gpg'
 
-############ CentOS and Fedora #############
+  # ########### CentOS and Fedora #############
 
   - name: fedora-30
     parent: base
@@ -101,7 +100,7 @@ diskimages:
     env-vars:
       DIB_EPEL_DISABLED: '1'
 
-  ############ Ubuntu #############
+  # ############ Ubuntu #############
   - name: ubuntu-bionic
     parent: base-debuntu
     pause: false
@@ -122,7 +121,7 @@ diskimages:
       DIB_DISTRIBUTION_MIRROR: 'https://ftp.halifax.rwth-aachen.de/ubuntu'
       DIB_DEBIAN_COMPONENTS: 'main,universe'
 
-   ############ Debian #############
+  # ############ Debian #############
   - name: debian-buster
     parent: base-debuntu
     pause: false
@@ -153,12 +152,12 @@ labels:
 providers:
   - name: osinfra
     driver: kubernetes
-      #context: zuul-context
+    # context: zuul-context
     pools:
       - name: zuul
         labels:
-          #- name: kubernetes-namespace
-          #  type: namespace
+          # - name: kubernetes-namespace
+          #   type: namespace
           - name: pod-fedora-latest
             type: pod
             image: quay.io/opentelekomcloud/zuul-fedora:33

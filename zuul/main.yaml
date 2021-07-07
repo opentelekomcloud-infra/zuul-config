@@ -26,7 +26,7 @@
           - opentelekomcloud/docker-machine-opentelekomcloud
           - opentelekomcloud/docs
           - opentelekomcloud/gophertelekomcloud
-            #          - opentelekomcloud/golangsdk
+          # - opentelekomcloud/golangsdk
           - opentelekomcloud/kontainer-engine-driver-otc
           - opentelekomcloud/oms
           - opentelekomcloud/otcdocstheme
