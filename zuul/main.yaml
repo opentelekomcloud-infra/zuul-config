@@ -69,6 +69,7 @@
           - opentelekomcloud-infra/fluentd
           - opentelekomcloud-infra/kapellmeister
           - opentelekomcloud-infra/myndir
+          - opentelekomcloud-infra/octavia-proxy
           - opentelekomcloud-infra/rancher-integration-tests
           - opentelekomcloud-infra/system-config
           - opentelekomcloud-infra/test-scenarios
