@@ -1,10 +1,13 @@
 - project:
     merge-mode: squash-merge
+    default-branch: main
     check:
       jobs:
+        - otc-zuul-jobs-linters
         - zuul-config-build-image-f34
     gate:
       jobs:
+        - otc-zuul-jobs-linters
         - zuul-config-build-image-f34
     post:
       jobs:
