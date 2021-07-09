@@ -16,6 +16,7 @@
           - opentelekomcloud/ansible-collection-apimon
           - opentelekomcloud/ansible-collection-cloud
           - opentelekomcloud/ansible-collection-common
+          - opentelekomcloud/ansible-collection-gitcontrol
           - opentelekomcloud/ansible-collection-template
           - opentelekomcloud/ansible-role-bastion
           - opentelekomcloud/ansible-role-otcextensions
