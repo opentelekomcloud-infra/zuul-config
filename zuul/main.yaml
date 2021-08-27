@@ -118,10 +118,10 @@
               extra-config-paths:
                 - zuul-tests.d/
           #####
-          - opentelekomcloud-infra/system-config
           - include: []
             projects:
               - ansible/ansible
+              - opentelekomcloud-infra/system-config
       gitlab:
         untrusted-projects:
           - ecosystem/docs
