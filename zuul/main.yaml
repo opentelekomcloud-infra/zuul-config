@@ -92,3 +92,26 @@
             projects:
               - osf/refstack-client
               - openstack/ansible-collections-openstack
+- tenant:
+    name: gl
+    exclude-unprotected-branches: true
+    report-build-page: true
+    max-nodes-per-job: 5
+    source:
+      github:
+        config-projects:
+          - opentelekomcloud-infra/gl-project-config:
+              load-branch: main
+          - opentelekomcloud-infra/base-jobs:
+              load-branch: main
+        untrusted-projects:
+          - opentelekomcloud-infra/otc-zuul-jobs:
+              extra-config-paths:
+                - zuul-tests.d/
+      gitlab:
+        untrusted-projects:
+          - ecosystem/docs
+      opendev:
+        untrusted-projects:
+          - zuul/zuul-jobs:
+              shadow: opentelekomcloud-infra/gl-project-config
