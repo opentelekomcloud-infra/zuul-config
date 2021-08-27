@@ -104,6 +104,15 @@
               load-branch: main
           - opentelekomcloud-infra/base-jobs:
               load-branch: main
+              shadow: opentelekomcloud-infra/gl-project-config
+          # Only use jobs and secrets from this repo, we do not want
+          # the project definition.
+          - opentelekomcloud-infra/zuul-project-config:
+              shadow: opentelekomcloud-infra/gl-project-config
+              include:
+                - job
+                - secret
+                - nodeset
         untrusted-projects:
           - opentelekomcloud-infra/otc-zuul-jobs:
               extra-config-paths:
