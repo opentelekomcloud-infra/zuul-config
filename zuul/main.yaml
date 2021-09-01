@@ -32,6 +32,7 @@
           - opentelekomcloud/oms
           - opentelekomcloud/otcdocstheme
           - opentelekomcloud/python-otcextensions
+          - opentelekomcloud/swift-proxy
           - opentelekomcloud/terraform-provider-opentelekomcloud
           - opentelekomcloud/ui-driver-otc
           - opentelekomcloud/ui-cluster-driver-otc
