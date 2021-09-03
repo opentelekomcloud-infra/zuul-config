@@ -113,8 +113,9 @@
                 - nodeset
         untrusted-projects:
           - opentelekomcloud-infra/otc-zuul-jobs:
-              extra-config-paths:
-                - zuul-tests.d/
+              include:
+                - job
+                - project-template
           #####
           - include: []
             projects:
