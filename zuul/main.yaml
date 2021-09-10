@@ -124,6 +124,7 @@
       gitlab:
         untrusted-projects:
           - ecosystem/docs
+          - ecosystem/service_catalog
       opendev:
         untrusted-projects:
           - zuul/zuul-jobs:
