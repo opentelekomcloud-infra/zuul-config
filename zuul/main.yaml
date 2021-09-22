@@ -36,6 +36,7 @@
           - opentelekomcloud/terraform-provider-opentelekomcloud
           - opentelekomcloud/ui-driver-otc
           - opentelekomcloud/ui-cluster-driver-otc
+          - opentelekomcloud-docs/elastic-load-balancing
           - opentelekomcloud-infra/alerta
           - opentelekomcloud-infra/alerta-web-addon
           - opentelekomcloud-infra/ansible-collection-dashboard
