@@ -37,6 +37,7 @@
           - opentelekomcloud/ui-driver-otc
           - opentelekomcloud/ui-cluster-driver-otc
           - opentelekomcloud-docs/elastic-load-balancing
+          - opentelekomcloud-docs/enterprise-dashboard
           - opentelekomcloud-infra/alerta
           - opentelekomcloud-infra/alerta-web-addon
           - opentelekomcloud-infra/ansible-collection-dashboard
