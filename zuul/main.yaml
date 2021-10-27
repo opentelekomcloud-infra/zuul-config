@@ -41,6 +41,7 @@
           - opentelekomcloud-infra/alerta
           - opentelekomcloud-infra/alerta-web-addon
           - opentelekomcloud-infra/ansible-collection-dashboard
+          - opentelekomcloud-infra/ansible-collection-infra
           - opentelekomcloud-infra/api-monitoring
           - opentelekomcloud-infra/apimon
           - opentelekomcloud-infra/apimon-tests
