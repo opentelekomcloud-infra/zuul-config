@@ -85,6 +85,11 @@
           - include: []
             projects:
               - ansible/ansible
+      gitlab:
+        untrusted-projects:
+          - include: []
+            projects:
+              - ecosystem/gitstyring
       opendev:
         untrusted-projects:
           - zuul/zuul-jobs:
