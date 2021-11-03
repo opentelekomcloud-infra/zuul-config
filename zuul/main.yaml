@@ -85,6 +85,11 @@
           - include: []
             projects:
               - ansible/ansible
+      gitlab:
+        untrusted-projects:
+          - include: []
+            projects:
+              - ecosystem/gitstyring
       opendev:
         untrusted-projects:
           - zuul/zuul-jobs:
@@ -99,17 +104,23 @@
     report-build-page: true
     max-nodes-per-job: 5
     source:
+      gitlab:
+        config-projects:
+          - ecosystem/zuul-project-config:
+              load-branch: main
+        untrusted-projects:
+          - ecosystem/docs
+          - ecosystem/service_catalog
+          - ecosystem/gitstyring
       github:
         config-projects:
-          - opentelekomcloud-infra/gl-project-config:
-              load-branch: main
           - opentelekomcloud-infra/base-jobs:
               load-branch: main
-              shadow: opentelekomcloud-infra/gl-project-config
+              shadow: ecosystem/zuul-project-config
           # Only use jobs and secrets from this repo, we do not want
           # the project definition.
           - opentelekomcloud-infra/zuul-project-config:
-              shadow: opentelekomcloud-infra/gl-project-config
+              shadow: ecosystem/zuul-project-config
               include:
                 - job
                 - secret
@@ -124,12 +135,7 @@
             projects:
               - ansible/ansible
               - opentelekomcloud-infra/system-config
-      gitlab:
-        untrusted-projects:
-          - ecosystem/docs
-          - ecosystem/service_catalog
-          - ecosystem/gitstyring
       opendev:
         untrusted-projects:
           - zuul/zuul-jobs:
-              shadow: opentelekomcloud-infra/gl-project-config
+              shadow: ecosystem/zuul-project-config
