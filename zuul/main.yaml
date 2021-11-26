@@ -38,6 +38,8 @@
           - opentelekomcloud/ui-cluster-driver-otc
           - opentelekomcloud-docs/elastic-load-balancing
           - opentelekomcloud-docs/enterprise-dashboard
+          - opentelekomcloud-docs/docs_on_docs
+          - opentelekomcloud-docs/docsportal
           - opentelekomcloud-infra/alerta
           - opentelekomcloud-infra/alerta-web-addon
           - opentelekomcloud-infra/ansible-collection-dashboard
@@ -75,6 +77,7 @@
           - opentelekomcloud-infra/kapellmeister
           - opentelekomcloud-infra/myndir
           - opentelekomcloud-infra/octavia-proxy
+          - opentelekomcloud-infra/otcbot
           - opentelekomcloud-infra/rancher-integration-tests
           - opentelekomcloud-infra/system-config
           - opentelekomcloud-infra/test-scenarios
@@ -105,6 +108,7 @@
           - ecosystem/zuul-project-config:
               load-branch: main
         untrusted-projects:
+          - docs/ecosystem
           - ecosystem/docs
           - ecosystem/service_catalog
           - ecosystem/system-config
