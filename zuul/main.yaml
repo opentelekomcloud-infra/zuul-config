@@ -36,6 +36,7 @@
           - opentelekomcloud/terraform-provider-opentelekomcloud
           - opentelekomcloud/ui-driver-otc
           - opentelekomcloud/ui-cluster-driver-otc
+          - opentelekomcloud/vault-plugin-secrets-openstack
           - opentelekomcloud-docs/elastic-load-balancing
           - opentelekomcloud-docs/enterprise-dashboard
           - opentelekomcloud-docs/docs_on_docs
