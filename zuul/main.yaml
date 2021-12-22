@@ -75,6 +75,7 @@
           - opentelekomcloud-infra/galera
           - opentelekomcloud-infra/gitstyring
           - opentelekomcloud-infra/fluentd
+          - opentelekomcloud-infra/identity-deploy
           - opentelekomcloud-infra/kapellmeister
           - opentelekomcloud-infra/myndir
           - opentelekomcloud-infra/octavia-proxy
