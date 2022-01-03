@@ -5,17 +5,13 @@ webapp:
   port: 8005
 
 zookeeper-servers:
-  - host: 192.168.20.116
-    port: 2281
-  - host: 192.168.20.182
-    port: 2281
-  - host: 192.168.20.47
+  - host: zookeeper.zookeeper.svc.cluster.local
     port: 2281
 
 zookeeper-tls:
-  cert: /etc/nodepool/ssl/zk/cert.pem
-  key: /etc/nodepool/ssl/zk/key.pem
-  ca: /etc/nodepool/ssl/zk/cacert.pem
+  cert: /tls/zk.pem
+  key: /tls/zk.key
+  ca: /tls/ca.pem
 
 diskimages:
   - name: base
