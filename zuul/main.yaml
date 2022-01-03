@@ -13,6 +13,7 @@
           - opentelekomcloud-infra/otc-zuul-jobs:
               extra-config-paths:
                 - zuul-tests.d/
+          ### OpenTelekomCloud
           - opentelekomcloud/ansible-collection-apimon
           - opentelekomcloud/ansible-collection-cloud
           - opentelekomcloud/ansible-collection-common
@@ -37,10 +38,12 @@
           - opentelekomcloud/ui-driver-otc
           - opentelekomcloud/ui-cluster-driver-otc
           - opentelekomcloud/vault-plugin-secrets-openstack
+          ### OpenTelekomCloud Docs
           - opentelekomcloud-docs/elastic-load-balancing
           - opentelekomcloud-docs/enterprise-dashboard
           - opentelekomcloud-docs/docs_on_docs
           - opentelekomcloud-docs/docsportal
+          ### OpenTelekomCloud Infra
           - opentelekomcloud-infra/alerta
           - opentelekomcloud-infra/alerta-web-addon
           - opentelekomcloud-infra/ansible-collection-dashboard
@@ -71,7 +74,6 @@
           - opentelekomcloud-infra/customer-service-monitoring
           - opentelekomcloud-infra/dashboard
           - opentelekomcloud-infra/delatore
-          - opentelekomcloud-infra/docsportal
           - opentelekomcloud-infra/galera
           - opentelekomcloud-infra/gitstyring
           - opentelekomcloud-infra/fluentd
@@ -86,6 +88,7 @@
           - opentelekomcloud-infra/validatetoken
           - opentelekomcloud-infra/vault-plugin-secrets-github
           - opentelekomcloud-infra/zuul-config
+          ### OpenTelekomCloud TF modules
           - terraform-opentelekomcloud-modules/terraform-opentelekomcloud-vpc
           #####
           - include: []
@@ -116,18 +119,6 @@
           - ecosystem/system-config
           - ecosystem/gitstyring
       github:
-        config-projects:
-          - opentelekomcloud-infra/base-jobs:
-              load-branch: main
-              shadow: ecosystem/zuul-project-config
-          # Only use jobs and secrets from this repo, we do not want
-          # the project definition.
-          - opentelekomcloud-infra/zuul-project-config:
-              shadow: ecosystem/zuul-project-config
-              include:
-                - job
-                - secret
-                - nodeset
         untrusted-projects:
           - opentelekomcloud-infra/otc-zuul-jobs:
               include:
