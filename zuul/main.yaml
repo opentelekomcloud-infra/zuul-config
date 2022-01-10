@@ -122,18 +122,18 @@
         config-projects:
           - opentelekomcloud-infra/base-jobs:
               load-branch: main
-              shadow: ecosystem/zuul-project-config
-              include:
-                - nodeset
+              shadow: gitlab/ecosystem/zuul-project-config
           # Only use jobs and secrets from this repo, we do not want
           # the project definition.
           - opentelekomcloud-infra/zuul-project-config:
-              shadow: ecosystem/zuul-project-config
+              shadow: gitlab/ecosystem/zuul-project-config
               include:
                 - job
                 - secret
 
         untrusted-projects:
+          - opentelekomcloud-infra/system-config
+
           - opentelekomcloud-infra/otc-zuul-jobs:
               include:
                 - job
@@ -142,7 +142,7 @@
           - include: []
             projects:
               - ansible/ansible
-              - opentelekomcloud-infra/system-config
+
       opendev:
         untrusted-projects:
           - zuul/zuul-jobs:
