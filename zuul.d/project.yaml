@@ -3,11 +3,11 @@
     default-branch: main
     check:
       jobs:
-        - otc-zuul-jobs-linters
+        - otc-tox-linters
         - zuul-config-build-image-f34
     gate:
       jobs:
-        - otc-zuul-jobs-linters
+        - otc-tox-linters
         - zuul-config-build-image-f34
     post:
       jobs:
