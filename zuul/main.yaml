@@ -131,8 +131,15 @@
             projects:
               - ansible/ansible
               - opentelekomcloud-infra/system-config
+              - opentelekomcloud/ansible-collection-apimon
+              - opentelekomcloud/ansible-collection-cloud
+              - opentelekomcloud/ansible-collection-gitcontrol
 
       opendev:
         untrusted-projects:
           - zuul/zuul-jobs:
               shadow: ecosystem/zuul-project-config
+          - include: []
+            projects:
+              - openstack/ansible-collections-openstack
+
