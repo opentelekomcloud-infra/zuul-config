@@ -43,6 +43,7 @@
           - opentelekomcloud-docs/enterprise-dashboard
           - opentelekomcloud-docs/docs_on_docs
           - opentelekomcloud-docs/docsportal
+          - opentelekomcloud-docs/sandbox
           ### OpenTelekomCloud Infra
           - opentelekomcloud-infra/alerta
           - opentelekomcloud-infra/alerta-web-addon
