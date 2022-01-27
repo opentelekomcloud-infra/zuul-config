@@ -75,6 +75,7 @@
           - opentelekomcloud-infra/customer-service-monitoring
           - opentelekomcloud-infra/dashboard
           - opentelekomcloud-infra/delatore
+          - opentelekomcloud-infra/docsportal
           - opentelekomcloud-infra/galera
           - opentelekomcloud-infra/gitstyring
           - opentelekomcloud-infra/fluentd
@@ -82,6 +83,7 @@
           - opentelekomcloud-infra/kapellmeister
           - opentelekomcloud-infra/myndir
           - opentelekomcloud-infra/octavia-proxy
+          - opentelekomcloud-infra/otc-api-ref
           - opentelekomcloud-infra/otcbot
           - opentelekomcloud-infra/rancher-integration-tests
           - opentelekomcloud-infra/system-config
@@ -114,6 +116,7 @@
           - ecosystem/zuul-project-config:
               load-branch: main
         untrusted-projects:
+          - docs/docsportal
           - docs/ecosystem
           - ecosystem/docs
           - ecosystem/service_catalog
@@ -143,4 +146,3 @@
           - include: []
             projects:
               - openstack/ansible-collections-openstack
-
