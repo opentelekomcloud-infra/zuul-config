@@ -39,7 +39,7 @@
           - opentelekomcloud/ui-cluster-driver-otc
           - opentelekomcloud/vault-plugin-secrets-openstack
           ### OpenTelekomCloud Blueprints
-          - opentelekomcloud-docs/docs
+          - opentelekomcloud-blueprints/docs
           ### OpenTelekomCloud Docs
           - opentelekomcloud-docs/elastic-load-balancing
           - opentelekomcloud-docs/enterprise-dashboard
