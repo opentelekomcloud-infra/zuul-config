@@ -43,23 +43,7 @@ diskimages:
       DIB_DISABLE_APT_CLEANUP: "1"
       DIB_DEBOOTSTRAP_EXTRA_ARGS: "--no-check-gpg"
 
-  # ########### Fedora #############
-
-  - name: fedora-30
-    parent: base
-    python-path: /usr/bin/python3
-    pause: true
-    elements:
-      - fedora-minimal
-    release: 30
-
-  - name: fedora-31
-    parent: base
-    pause: false
-    python-path: /usr/bin/python3
-    elements:
-      - fedora-minimal
-    release: 31
+  # ########### Fedora and CentOS #############
 
   - name: fedora-32
     parent: base
@@ -69,21 +53,36 @@ diskimages:
       - fedora-minimal
     release: 32
 
-  - name: fedora-33
+  - name: fedora-35
     parent: base
-    pause: true
+    pause: false
     python-path: /usr/bin/python3
     elements:
-      - fedora-minimal
-    release: 33
+      - fedora-container
+    release: 35
 
-  - name: fedora-34
+  - name: rockylinux-8
     parent: base
-    pause: true
+    pause: false
     python-path: /usr/bin/python3
+    release: '8'
     elements:
-      - fedora-minimal
-    release: 34
+      - cache-devstack
+      - rocky-container
+      - epel
+    env-vars:
+      DIB_EPEL_DISABLED: '1'
+
+  - name: centos-9-stream
+    parent: base
+    pause: false
+    python-path: /usr/bin/python3
+    release: '9-stream'
+    elements:
+      - cache-devstack
+      - centos-minimal
+    env-vars:
+      DIB_EPEL_DISABLED: '1'
 
   # ############ Ubuntu #############
   - name: ubuntu-bionic
@@ -120,11 +119,13 @@ diskimages:
 
 labels:
   - name: pod-fedora-latest
-  - name: fedora-30
-  - name: fedora-31
   - name: fedora-32
   - name: fedora-32-large
   - name: fedora-34
+  - name: fedora-35
+  - name: fedora-35-large
+  - name: rockylinux-8
+  - name: centos-9-stream
   - name: debian-buster
     min-ready: 0
   - name: ubuntu-bionic
@@ -151,10 +152,10 @@ providers:
     cloud: otcci-pool1
     boot-timeout: 120
     diskimages: &provider_diskimages
-      - name: fedora-30
-      - name: fedora-31
       - name: fedora-32
-      - name: fedora-34
+      - name: fedora-35
+      - name: rockylinux-8
+      - name: centos-9-stream
       - name: debian-buster
       - name: ubuntu-bionic
       - name: ubuntu-focal
@@ -169,14 +170,6 @@ providers:
         networks:
           - zuul_net
         labels: &otc_labels
-          - name: fedora-30
-            diskimage: fedora-30
-            flavor-name: s2.large.2
-            key-name: nodepool
-          - name: fedora-31
-            diskimage: fedora-31
-            flavor-name: s2.large.2
-            key-name: nodepool
           - name: fedora-32
             diskimage: fedora-32
             flavor-name: s2.large.2
@@ -185,8 +178,20 @@ providers:
             diskimage: fedora-32
             flavor-name: s2.xlarge.2
             key-name: nodepool
-          - name: fedora-34
-            diskimage: fedora-34
+          - name: fedora-35
+            diskimage: fedora-35
+            flavor-name: s2.large.2
+            key-name: nodepool
+          - name: fedora-35-large
+            diskimage: fedora-35
+            flavor-name: s2.xlarge.2
+            key-name: nodepool
+          - name: rockylinux-8
+            diskimage: rockylinux-8
+            flavor-name: s2.large.2
+            key-name: nodepool
+          - name: centos-9-stream
+            diskimage: centos-9-stream
             flavor-name: s2.large.2
             key-name: nodepool
           - name: debian-buster
