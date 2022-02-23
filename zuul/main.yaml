@@ -104,7 +104,7 @@
       opendev:
         untrusted-projects:
           - zuul/zuul-jobs:
-              shadow: 
+              shadow:
                 - opentelekomcloud-infra/zuul-project-config
                 - opentelekomcloud-infra/otc-zuul-jobs
           - include: []
