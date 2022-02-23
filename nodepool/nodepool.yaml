@@ -67,7 +67,6 @@ diskimages:
     python-path: /usr/bin/python3
     release: '8'
     elements:
-      - cache-devstack
       - rocky-container
       - epel
     env-vars:
@@ -79,7 +78,6 @@ diskimages:
     python-path: /usr/bin/python3
     release: '9-stream'
     elements:
-      - cache-devstack
       - centos-minimal
     env-vars:
       DIB_EPEL_DISABLED: '1'

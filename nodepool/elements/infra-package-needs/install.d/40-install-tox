@@ -23,4 +23,5 @@ fi
 set -e
 
 python3 -m venv /usr/tox-env
+/usr/bindep-env/bin/pip install --upgrade pip
 /usr/tox-env/bin/pip install tox

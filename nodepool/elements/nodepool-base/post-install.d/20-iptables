@@ -22,7 +22,7 @@ set -e
 
 if [[ "$DISTRO_NAME" =~ (debian|ubuntu) ]] ; then
     service_name=netfilter-persistent
-elif [[ "$DISTRO_NAME" =~ (centos|rhel7|fedora) ]] ; then
+elif [[ "$DISTRO_NAME" =~ (centos|rhel7|fedora|rocky) ]] ; then
     service_name=iptables
 elif [[ "$DISTRO_NAME" == 'opensuse' ]] ; then
     # handle iptables through init.d instead of a service
