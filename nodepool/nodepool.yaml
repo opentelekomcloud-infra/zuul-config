@@ -55,7 +55,7 @@ diskimages:
 
   - name: fedora-35
     parent: base
-    pause: false
+    pause: true
     python-path: /usr/bin/python3
     elements:
       - fedora-container
@@ -63,7 +63,7 @@ diskimages:
 
   - name: rockylinux-8
     parent: base
-    pause: false
+    pause: true
     python-path: /usr/bin/python3
     release: '8'
     elements:
@@ -117,6 +117,7 @@ diskimages:
 
 labels:
   - name: pod-fedora-latest
+  - name: pod-fedora-35
   - name: fedora-32
   - name: fedora-32-large
   - name: fedora-34
@@ -125,11 +126,8 @@ labels:
   - name: rockylinux-8
   - name: centos-9-stream
   - name: debian-buster
-    min-ready: 0
   - name: ubuntu-bionic
-    min-ready: 0
   - name: ubuntu-focal
-    min-ready: 0
 
 providers:
   - name: osinfra
@@ -145,6 +143,11 @@ providers:
             image: quay.io/opentelekomcloud/zuul-fedora:33
             cpu: 2
             memory: 2048
+          - name: pod-fedora-35
+            type: pod
+            image: quay.io/opentelekomcloud/zuul-fedora:35
+            cpu: 2
+            memory: 2048
   - name: otc-1
     driver: openstack
     cloud: otcci-pool1
@@ -156,6 +159,7 @@ providers:
       - name: centos-9-stream
       - name: debian-buster
       - name: ubuntu-bionic
+      - name: ubuntu-focal
       - name: ubuntu-focal
     pools:
       - name: pool1
