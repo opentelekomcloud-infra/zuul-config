@@ -23,4 +23,5 @@ fi
 set -e
 
 python3 -m venv /usr/bindep-env
+/usr/bindep-env/bin/pip install --upgrade pip
 /usr/bindep-env/bin/pip install bindep

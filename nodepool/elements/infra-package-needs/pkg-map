@@ -5,6 +5,20 @@
         "python-dev": "",
         "ntp": "chrony",
         "ntpdate": ""
+       },
+       "9-stream": {
+        "python-dev": "",
+        "ntp": "chrony",
+        "ntpdate": "",
+        "iptables": "iptables-services"
+       }
+    },
+    "rocky": {
+      "8": {
+        "python-dev": "",
+        "ntp": "chrony",
+        "ntpdate": "",
+        "coreutils": ""
        }
     },
     "ubuntu": {
