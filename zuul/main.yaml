@@ -104,7 +104,9 @@
       opendev:
         untrusted-projects:
           - zuul/zuul-jobs:
-              shadow: opentelekomcloud-infra/zuul-project-config
+              shadow:
+                - opentelekomcloud-infra/zuul-project-config
+                - opentelekomcloud-infra/otc-zuul-jobs
           - include: []
             projects:
               - osf/refstack-client
