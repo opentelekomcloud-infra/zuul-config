@@ -42,13 +42,53 @@
           ### OpenTelekomCloud Blueprints
           - opentelekomcloud-blueprints/docs
           ### OpenTelekomCloud Docs
-          - opentelekomcloud-docs/elastic-load-balancing
-          - opentelekomcloud-docs/enterprise-dashboard
+          - opentelekomcloud-docs/anti-ddos
+          - opentelekomcloud-docs/application-operations-management
+          - opentelekomcloud-docs/auto-scaling
+          - opentelekomcloud-docs/bare-metal-server
+          - opentelekomcloud-docs/cloud-backup-recovery
+          - opentelekomcloud-docs/cloud-container-engine
+          - opentelekomcloud-docs/cloud-eye
+          - opentelekomcloud-docs/cloud-search-service
+          - opentelekomcloud-docs/cloud-server-backup-service
+          - opentelekomcloud-docs/cloud-trace-service
+          - opentelekomcloud-docs/content-delivery-network
+          - opentelekomcloud-docs/data-ingestion-service
+          - opentelekomcloud-docs/data-warehouse-service
+          - opentelekomcloud-docs/dedicated-host
+          - opentelekomcloud-docs/direct-connect
+          - opentelekomcloud-docs/distributed-cache-service
+          - opentelekomcloud-docs/distributed-message-service
           - opentelekomcloud-docs/docs_on_docs
           - opentelekomcloud-docs/docsportal
+          - opentelekomcloud-docs/document-database-service
           - opentelekomcloud-docs/elastic-cloud-server
+          - opentelekomcloud-docs/elastic-ip
+          - opentelekomcloud-docs/elastic-load-balancing
+          - opentelekomcloud-docs/elastic-volume-service
+          - opentelekomcloud-docs/enterprise-dashboard
+          - opentelekomcloud-docs/identity-access-management
+          - opentelekomcloud-docs/image-management-service
+          - opentelekomcloud-docs/key-management-service
+          - opentelekomcloud-docs/log-tank-service
+          - opentelekomcloud-docs/mapreduce-service
           - opentelekomcloud-docs/modelarts
+          - opentelekomcloud-docs/nat-gateway
+          - opentelekomcloud-docs/object-storage-service
+          - opentelekomcloud-docs/private-link-access-service
+          - opentelekomcloud-docs/relational-database-service
+          - opentelekomcloud-docs/resource-template-service
           - opentelekomcloud-docs/sandbox
+          - opentelekomcloud-docs/scalable-file-service
+          - opentelekomcloud-docs/simple-message-notification
+          - opentelekomcloud-docs/software-repository-container
+          - opentelekomcloud-docs/storage-disaster-recovery-service
+          - opentelekomcloud-docs/tag-management-service
+          - opentelekomcloud-docs/virtual-private-cloud
+          - opentelekomcloud-docs/virtual-private-network
+          - opentelekomcloud-docs/volume-backup-service
+          - opentelekomcloud-docs/vpc-endpoint
+          - opentelekomcloud-docs/web-application-firewall
           ### OpenTelekomCloud Infra
           - opentelekomcloud-infra/alerta
           - opentelekomcloud-infra/alerta-web-addon
