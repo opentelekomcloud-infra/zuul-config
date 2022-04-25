@@ -33,6 +33,7 @@
           - opentelekomcloud/oms
           - opentelekomcloud/otcdocstheme
           - opentelekomcloud/python-otcextensions
+          - opentelekomcloud/security-concept
           - opentelekomcloud/sphinx-opensearch
           - opentelekomcloud/swift-proxy
           - opentelekomcloud/terraform-provider-opentelekomcloud
