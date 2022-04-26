@@ -60,6 +60,7 @@
           - opentelekomcloud-docs/direct-connect
           - opentelekomcloud-docs/distributed-cache-service
           - opentelekomcloud-docs/distributed-message-service
+          - opentelekomcloud-docs/doc-exports
           - opentelekomcloud-docs/docs_on_docs
           - opentelekomcloud-docs/docsportal
           - opentelekomcloud-docs/document-database-service
