@@ -103,6 +103,16 @@ diskimages:
       DIB_DISTRIBUTION_MIRROR: "https://ftp.halifax.rwth-aachen.de/ubuntu"
       DIB_DEBIAN_COMPONENTS: "main,universe"
 
+  - name: ubuntu-jammy
+    parent: base-debuntu
+    pause: false
+    elements:
+      - ubuntu-minimal
+    release: jammy
+    env-vars:
+      DIB_DISTRIBUTION_MIRROR: "https://ftp.halifax.rwth-aachen.de/ubuntu"
+      DIB_DEBIAN_COMPONENTS: "main,universe"
+
   # ############ Debian #############
   - name: debian-buster
     parent: base-debuntu
@@ -110,6 +120,17 @@ diskimages:
     elements:
       - debian-minimal
     release: buster
+    env-vars:
+      DIB_DISTRIBUTION_MIRROR: "http://ftp2.de.debian.org/debian"
+      DIB_DEBIAN_SECURITY_MIRROR: "http://debian.mirror.lrz.de/debian-security"
+      DIB_DEBIAN_SECURITY_SUBPATH: ""
+
+  - name: debian-bullseye
+    parent: base-debuntu
+    pause: false
+    elements:
+      - debian-minimal
+    release: bullseye
     env-vars:
       DIB_DISTRIBUTION_MIRROR: "http://ftp2.de.debian.org/debian"
       DIB_DEBIAN_SECURITY_MIRROR: "http://debian.mirror.lrz.de/debian-security"
@@ -126,8 +147,9 @@ labels:
   - name: rockylinux-8
   - name: centos-9-stream
   - name: debian-buster
-  - name: ubuntu-bionic
+  - name: debian-bullseye
   - name: ubuntu-focal
+  - name: ubuntu-jammy
 
 providers:
   - name: osinfra
@@ -158,9 +180,9 @@ providers:
       - name: rockylinux-8
       - name: centos-9-stream
       - name: debian-buster
-      - name: ubuntu-bionic
+      - name: debian-bullseye
       - name: ubuntu-focal
-      - name: ubuntu-focal
+      - name: ubuntu-jammy
     pools:
       - name: pool1
         max-servers: 9
@@ -200,12 +222,16 @@ providers:
             diskimage: debian-buster
             flavor-name: s2.large.2
             key-name: nodepool
-          - name: ubuntu-bionic
-            diskimage: ubuntu-bionic
-            flavor-name: s2.xlarge.2
+          - name: debian-bullseye
+            diskimage: debian-bullseye
+            flavor-name: s2.large.2
             key-name: nodepool
           - name: ubuntu-focal
             diskimage: ubuntu-focal
+            flavor-name: s2.xlarge.2
+            key-name: nodepool
+          - name: ubuntu-jammy
+            diskimage: ubuntu-jammy
             flavor-name: s2.xlarge.2
             key-name: nodepool
   - name: otc-2
