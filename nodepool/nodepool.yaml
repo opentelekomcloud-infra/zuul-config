@@ -47,7 +47,7 @@ diskimages:
 
   - name: fedora-32
     parent: base
-    pause: false
+    pause: true
     python-path: /usr/bin/python3
     elements:
       - fedora-minimal
@@ -55,7 +55,7 @@ diskimages:
 
   - name: fedora-35
     parent: base
-    pause: true
+    pause: false
     python-path: /usr/bin/python3
     elements:
       - fedora-container
