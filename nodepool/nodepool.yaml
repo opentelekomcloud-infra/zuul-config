@@ -154,7 +154,7 @@ labels:
 providers:
   - name: osinfra
     driver: kubernetes
-    # context: zuul-context
+    context: otcci
     pools:
       - name: zuul
         labels:
