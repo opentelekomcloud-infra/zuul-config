@@ -79,6 +79,7 @@ diskimages:
     release: '9-stream'
     elements:
       - centos-minimal
+      - epel
     env-vars:
       DIB_EPEL_DISABLED: '1'
 
