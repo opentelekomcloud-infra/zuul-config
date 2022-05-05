@@ -24,3 +24,7 @@ if [[ "$DISTRO_NAME" =~ ^(centos|rocky)$ && ${DIB_RELEASE} != '9-stream' ]] ; th
     # Note: $YUM exposed by centos environment, correct across releases
     ${YUM} -y install --enablerepo=epel haveged
 fi
+if [[ "$DISTRO_NAME" =~ ^(centos)$ && ${DIB_RELEASE} == '9-stream' ]] ; then
+    # Note: Enable CRB repo to i.e. have access to python3-wheel
+    dnf config-manager --set-enabled crb
+fi
