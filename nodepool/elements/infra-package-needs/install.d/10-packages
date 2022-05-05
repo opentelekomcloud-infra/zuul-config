@@ -21,7 +21,8 @@ fi
 set -e
 
 if [[ "$DISTRO_NAME" =~ ^(centos|rocky)$ && ${DIB_RELEASE} != '9-stream' ]] ; then
-    # Note: $YUM exposed by centos environment, correct across releases
+    # 9-stream we are just using the default rngd
+    # Note: $YUM exposed by centos|rhel-like environment, correct across releases
     ${YUM} -y install --enablerepo=epel haveged
 fi
 if [[ "$DISTRO_NAME" =~ ^(centos)$ && ${DIB_RELEASE} == '9-stream' ]] ; then
