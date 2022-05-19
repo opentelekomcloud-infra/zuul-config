@@ -140,6 +140,7 @@ diskimages:
 labels:
   - name: pod-fedora-latest
   - name: pod-fedora-35
+  - name: pod-fedora-36
   - name: fedora-32
   - name: fedora-32-large
   - name: fedora-34
