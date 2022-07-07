@@ -32,6 +32,7 @@
           - opentelekomcloud/kontainer-engine-driver-otc
           - opentelekomcloud/oms
           - opentelekomcloud/otcdocstheme
+          - opentelekomcloud/python-giteaclient
           - opentelekomcloud/python-otcextensions
           - opentelekomcloud/security-concept
           - opentelekomcloud/sphinx-opensearch
