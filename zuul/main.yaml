@@ -4,12 +4,6 @@
     report-build-page: true
     max-nodes-per-job: 5
     source:
-      gitea:
-        untrusted-projects:
-          # Internal docs
-          - docs/doc-exports
-          - docs/modelarts
-          - docs/elastic-cloud-server
       github:
         config-projects:
           - opentelekomcloud-infra/zuul-project-config
@@ -172,6 +166,14 @@
     report-build-page: true
     max-nodes-per-job: 5
     source:
+      gitea:
+        untrusted-projects:
+          # Internal docs
+          - docs/doc-exports
+          - docs/docsportal
+          - docs/elastic-cloud-server
+          - docs/modelarts
+
       gitlab:
         config-projects:
           - ecosystem/zuul-project-config:
@@ -203,7 +205,9 @@
       opendev:
         untrusted-projects:
           - zuul/zuul-jobs:
-              shadow: ecosystem/zuul-project-config
+              shadow:
+                - ecosystem/zuul-project-config
+                - opentelekomcloud-infra/otc-zuul-jobs
           - include: []
             projects:
               - openstack/ansible-collections-openstack
