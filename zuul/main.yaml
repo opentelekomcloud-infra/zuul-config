@@ -179,7 +179,7 @@
           - ecosystem/zuul-project-config:
               load-branch: main
         untrusted-projects:
-          - docs/docsportal
+          # - docs/docsportal
           - docs/ecosystem
           - ecosystem/docs
           - ecosystem/service_catalog
