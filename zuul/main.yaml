@@ -4,6 +4,12 @@
     report-build-page: true
     max-nodes-per-job: 5
     source:
+      gitea:
+        untrusted-projects:
+          # Internal docs
+          - docs/doc-exports
+          - docs/modelarts
+          - docs/elastic-cloud-server
       github:
         config-projects:
           - opentelekomcloud-infra/zuul-project-config
