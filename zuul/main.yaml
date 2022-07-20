@@ -177,6 +177,8 @@
       gitlab:
         config-projects:
           - ecosystem/zuul-project-config:
+              extra-config-paths:
+                - zuul-tests.d/
               load-branch: main
         untrusted-projects:
           # - docs/docsportal
