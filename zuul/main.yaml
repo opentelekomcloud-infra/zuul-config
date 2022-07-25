@@ -194,8 +194,10 @@
           - docs/doc-exports
           - docs/docsportal
           - docs/elastic-cloud-server
+          - docs/elastic-load-balancing
           - docs/image-management-service
           - docs/modelarts
+
       gitlab:
         config-projects:
           - ecosystem/zuul-project-config:
