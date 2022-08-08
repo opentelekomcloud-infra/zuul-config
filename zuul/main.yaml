@@ -1,5 +1,17 @@
+- admin-rule:
+    name: eco_admin
+    conditions:
+      - resource_access.zuul.roles: "eco_admin"
+
+- admin-rule:
+    name: gl_admin
+    conditions:
+      - resource_access.zuul.roles: "gl_admin"
+
 - tenant:
     name: eco
+    admin_rules:
+      - eco_admin
     exclude-unprotected-branches: true
     report-build-page: true
     max-nodes-per-job: 5
@@ -160,8 +172,11 @@
             projects:
               - osf/refstack-client
               - openstack/ansible-collections-openstack
+
 - tenant:
     name: gl
+    admin_rules:
+      - gl_admin
     exclude-unprotected-branches: true
     report-build-page: true
     max-nodes-per-job: 5
