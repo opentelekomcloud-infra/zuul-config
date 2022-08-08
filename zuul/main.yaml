@@ -1,4 +1,9 @@
 - admin-rule:
+    name: admin
+    conditions:
+      - resource_access.zuul.roles: "admin"
+
+- admin-rule:
     name: eco_admin
     conditions:
       - resource_access.zuul.roles: "eco_admin"
@@ -10,7 +15,8 @@
 
 - tenant:
     name: eco
-    admin_rules:
+    admin-rules:
+      - admin
       - eco_admin
     exclude-unprotected-branches: true
     report-build-page: true
@@ -175,7 +181,8 @@
 
 - tenant:
     name: gl
-    admin_rules:
+    admin-rules:
+      - admin
       - gl_admin
     exclude-unprotected-branches: true
     report-build-page: true
