@@ -191,12 +191,55 @@
       gitea:
         untrusted-projects:
           # Internal docs
+          - docs/anti-ddos
+          - docs/application-operations-management
+          - docs/auto-scaling
+          - docs/bare-metal-server
+          - docs/cloud-backup-recovery
+          - docs/cloud-container-engine
+          - docs/cloud-eye
+          - docs/cloud-search-service
+          - docs/cloud-server-backup-service
+          - docs/cloud-trace-service
+          - docs/content-delivery-network
+          - docs/data-ingestion-service
+          - docs/data-warehouse-service
+          - docs/dedicated-host
+          - docs/direct-connect
+          - docs/distributed-cache-service
+          - docs/distributed-message-service
           - docs/doc-exports
           - docs/docsportal
+          - docs/document-database-service
           - docs/elastic-cloud-server
+          - docs/elastic-ip
           - docs/elastic-load-balancing
+          - docs/elastic-volume-service
+          - docs/enterprise-dashboard
+          - docs/identity-access-management
           - docs/image-management-service
+          - docs/key-management-service
+          - docs/log-tank-service
+          - docs/mapreduce-service
           - docs/modelarts
+          - docs/nat-gateway
+          - docs/object-storage-service
+          - docs/private-link-access-service
+          - docs/relational-database-service
+          - docs/resource-template-service
+          - docs/sandbox
+          - docs/scalable-file-service
+          - docs/security
+          - docs/simple-message-notification
+          - docs/software-repository-container
+          - docs/status-dashboard
+          - docs/storage-disaster-recovery-service
+          - docs/tag-management-service
+          - docs/virtual-private-cloud
+          - docs/virtual-private-network
+          - docs/volume-backup-service
+          - docs/vpc-endpoint
+          - docs/web-application-firewall
 
       gitlab:
         config-projects:
