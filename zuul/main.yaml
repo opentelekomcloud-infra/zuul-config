@@ -73,7 +73,9 @@
           - opentelekomcloud-docs/cloud-server-backup-service
           - opentelekomcloud-docs/cloud-trace-service
           - opentelekomcloud-docs/content-delivery-network
+          - opentelekomcloud-docs/data-admin-service
           - opentelekomcloud-docs/data-ingestion-service
+          - opentelekomcloud-docs/data-replication-service
           - opentelekomcloud-docs/data-warehouse-service
           - opentelekomcloud-docs/dedicated-host
           - opentelekomcloud-docs/direct-connect
@@ -83,11 +85,15 @@
           - opentelekomcloud-docs/docs_on_docs
           - opentelekomcloud-docs/docsportal
           - opentelekomcloud-docs/document-database-service
+          - opentelekomcloud-docs/domain-name-service
           - opentelekomcloud-docs/elastic-cloud-server
           - opentelekomcloud-docs/elastic-ip
           - opentelekomcloud-docs/elastic-load-balancing
           - opentelekomcloud-docs/elastic-volume-service
           - opentelekomcloud-docs/enterprise-dashboard
+          - opentelekomcloud-docs/gaussdb-mysql
+          - opentelekomcloud-docs/gaussdb-nosql
+          - opentelekomcloud-docs/gaussdb-opengauss
           - opentelekomcloud-docs/identity-access-management
           - opentelekomcloud-docs/image-management-service
           - opentelekomcloud-docs/key-management-service
@@ -113,6 +119,7 @@
           - opentelekomcloud-docs/volume-backup-service
           - opentelekomcloud-docs/vpc-endpoint
           - opentelekomcloud-docs/web-application-firewall
+          - opentelekomcloud-docs/web-application-firewall-dedicated
           ### OpenTelekomCloud Infra
           - opentelekomcloud-infra/alerta
           - opentelekomcloud-infra/alerta-web-addon
@@ -203,7 +210,9 @@
           - docs/cloud-server-backup-service
           - docs/cloud-trace-service
           - docs/content-delivery-network
+          - docs/data-admin-service
           - docs/data-ingestion-service
+          - docs/data-replication-service
           - docs/data-warehouse-service
           - docs/dedicated-host
           - docs/direct-connect
@@ -212,11 +221,15 @@
           - docs/doc-exports
           - docs/docsportal
           - docs/document-database-service
+          - docs/domain-name-service
           - docs/elastic-cloud-server
           - docs/elastic-ip
           - docs/elastic-load-balancing
           - docs/elastic-volume-service
           - docs/enterprise-dashboard
+          - docs/gaussdb-mysql
+          - docs/gaussdb-nosql
+          - docs/gaussdb-opengauss
           - docs/identity-access-management
           - docs/image-management-service
           - docs/key-management-service
@@ -240,6 +253,7 @@
           - docs/volume-backup-service
           - docs/vpc-endpoint
           - docs/web-application-firewall
+          - docs/web-application-firewall-dedicated
 
           # Infra
           - infra/otc-metadata
