@@ -32,7 +32,6 @@
               extra-config-paths:
                 - zuul-tests.d/
           ### OpenTelekomCloud
-          - opentelekomcloud/ansible-collection-apimon
           - opentelekomcloud/ansible-collection-cloud
           - opentelekomcloud/ansible-collection-common
           - opentelekomcloud/ansible-collection-gitcontrol
@@ -119,7 +118,6 @@
           - opentelekomcloud-infra/ansible-collection-dashboard
           - opentelekomcloud-infra/ansible-collection-infra
           - opentelekomcloud-infra/api-monitoring
-          - opentelekomcloud-infra/apimon
           - opentelekomcloud-infra/apimon-tests
           - opentelekomcloud-infra/ansible-playbooks-common
           - opentelekomcloud-infra/ansible-role-alerta
@@ -136,8 +134,6 @@
           - opentelekomcloud-infra/ansible-role-telegraf
           - opentelekomcloud-infra/ansible-role-web-proxy-nginx
           - opentelekomcloud-infra/ansible-role-zookeeper
-          - opentelekomcloud-infra/cloudmon-metrics
-          - opentelekomcloud-infra/cloudmon-plugin-loadbalancer
           - opentelekomcloud-infra/cloudmon-plugin-smtp
           - opentelekomcloud-infra/crutch-house
           - opentelekomcloud-infra/csm-ansible-collection
@@ -163,6 +159,14 @@
           - opentelekomcloud-infra/validatetoken
           - opentelekomcloud-infra/vault-plugin-secrets-github
           - opentelekomcloud-infra/zuul-config
+          ### StackMon
+          - stackmon/ansible-collection-apimon
+          - stackmon/apimon
+          - stackmon/apimon-tests
+          - stackmon/cloudmon
+          - stackmon/cloudmon-plugin-loadbalancer
+          - stackmon/cloudmon-metrics
+
           ### OpenTelekomCloud TF modules
           - terraform-opentelekomcloud-modules/terraform-opentelekomcloud-vpc
           #####
