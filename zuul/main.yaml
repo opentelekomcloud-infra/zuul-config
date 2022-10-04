@@ -104,6 +104,7 @@
           - opentelekomcloud-docs/presentations
           - opentelekomcloud-docs/private-link-access-service
           - opentelekomcloud-docs/relational-database-service
+          - opentelekomcloud-docs/resource-management-service
           - opentelekomcloud-docs/resource-template-service
           - opentelekomcloud-docs/sandbox
           - opentelekomcloud-docs/scalable-file-service
@@ -244,6 +245,7 @@
           - docs/object-storage-service
           - docs/private-link-access-service
           - docs/relational-database-service
+          - docs/resource-management-service
           - docs/resource-template-service
           - docs/scalable-file-service
           - docs/security
