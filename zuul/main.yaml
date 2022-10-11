@@ -24,7 +24,8 @@
     source:
       github:
         config-projects:
-          - opentelekomcloud-infra/zuul-project-config
+          - opentelekomcloud-infra/zuul-project-config:
+              load-branch: main
           - opentelekomcloud-infra/base-jobs:
               load-branch: main
         untrusted-projects:
