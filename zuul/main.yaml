@@ -105,6 +105,7 @@
           - opentelekomcloud-docs/presentations
           - opentelekomcloud-docs/private-link-access-service
           - opentelekomcloud-docs/relational-database-service
+          - opentelekomcloud-docs/resource-management-service
           - opentelekomcloud-docs/resource-template-service
           - opentelekomcloud-docs/sandbox
           - opentelekomcloud-docs/scalable-file-service
@@ -231,7 +232,7 @@
           - docs/elastic-ip
           - docs/elastic-load-balancing
           - docs/elastic-volume-service
-          - docs/enterprise-dashboard
+          # - docs/enterprise-dashboard
           - docs/gaussdb-mysql
           - docs/gaussdb-nosql
           - docs/gaussdb-opengauss
@@ -245,12 +246,13 @@
           - docs/object-storage-service
           - docs/private-link-access-service
           - docs/relational-database-service
+          - docs/resource-management-service
           - docs/resource-template-service
           - docs/scalable-file-service
           - docs/security
           - docs/simple-message-notification
           - docs/software-repository-container
-          - docs/status-dashboard
+          # - docs/status-dashboard
           - docs/storage-disaster-recovery-service
           - docs/tag-management-service
           - docs/virtual-private-cloud
