@@ -273,9 +273,6 @@
                 - zuul-tests.d/
               load-branch: main
         untrusted-projects:
-          # - docs/docsportal
-          - docs/ecosystem
-          - ecosystem/docs
           - ecosystem/service_catalog
           - ecosystem/system-config
           - ecosystem/gitstyring
