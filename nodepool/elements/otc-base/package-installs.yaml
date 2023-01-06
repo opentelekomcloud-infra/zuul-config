@@ -4,7 +4,7 @@ bash:
 # network:
 latexmk:
 imagemagick:
-texlive-latex-base:
-texlive-latex-extra:
-texlive-xetex:
-texlive-fonts-recommended:
+# texlive-latex-base:
+# texlive-latex-extra:
+# texlive-xetex:
+# texlive-fonts-recommended:
