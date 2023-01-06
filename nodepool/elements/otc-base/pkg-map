@@ -4,7 +4,11 @@
       "cloud-init": "cloud-init",
       "dhcp-client": "dhclient",
       "network": "NetworkManager",
-      "coreutils": "coreutils"
+      "coreutils": "coreutils",
+      "imagemagick": "ImageMagick",
+      "texlive-fonts-recommended": "",
+      "texlive-latex-base": "",
+      "texlive-latex-extra": ""
     },
     "suse": {
       "cloud-init": "cloud-init",
@@ -17,11 +21,17 @@
     },
     "debian": {
       "cloud-init": "cloud-init",
-      "dhcp-client": "isc-dhcp-client"
+      "dhcp-client": "isc-dhcp-client",
+      "imagemagick": "imagemagick",
+      "texlive-fonts-recommended": "texlive-fonts-recommended",
+      "texlive-latex-base": "texlive-latex-base",
+      "texlive-latex-extra": "texlive-latex-extra"
     }
   },
   "default": {
     "cloud-init": "cloud-init",
-    "coreutils": ""
+    "coreutils": "";
+    "latexmk": "latexmk",
+    "texlive-xetex": "texlive-xetex"
   }
 }
