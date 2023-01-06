@@ -3,7 +3,7 @@ coreutils:
 bash:
 # network:
 latexmk:
-imagemagick:
+# imagemagick:
 # texlive-latex-base:
 # texlive-latex-extra:
 # texlive-xetex:
