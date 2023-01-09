@@ -2,7 +2,7 @@ cloud-init:
 coreutils:
 bash:
 # network:
-latexmk:
+# latexmk:
 # imagemagick:
 # texlive-latex-base:
 # texlive-latex-extra:
