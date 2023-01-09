@@ -30,7 +30,7 @@
   },
   "default": {
     "cloud-init": "cloud-init",
-    "coreutils": "";
+    "coreutils": "",
     "latexmk": "latexmk",
     "texlive-xetex": "texlive-xetex"
   }
