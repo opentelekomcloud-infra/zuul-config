@@ -109,6 +109,7 @@
           - opentelekomcloud-docs/resource-template-service
           - opentelekomcloud-docs/sandbox
           - opentelekomcloud-docs/scalable-file-service
+          - opentelekomcloud-docs/secure-mail-gateway
           - opentelekomcloud-docs/security
           - opentelekomcloud-docs/simple-message-notification
           - opentelekomcloud-docs/software-repository-container
@@ -250,6 +251,7 @@
           - docs/resource-management-service
           - docs/resource-template-service
           - docs/scalable-file-service
+          - docs/secure-mail-gateway
           - docs/security
           - docs/simple-message-notification
           - docs/software-repository-container
