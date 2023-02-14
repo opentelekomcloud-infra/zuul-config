@@ -68,6 +68,7 @@
           - opentelekomcloud-docs/bare-metal-server
           - opentelekomcloud-docs/cloud-backup-recovery
           - opentelekomcloud-docs/cloud-container-engine
+          - opentelekomcloud-docs/cloud-container-instance
           - opentelekomcloud-docs/cloud-eye
           - opentelekomcloud-docs/cloud-search-service
           - opentelekomcloud-docs/cloud-server-backup-service
@@ -80,6 +81,7 @@
           - opentelekomcloud-docs/dedicated-host
           - opentelekomcloud-docs/direct-connect
           - opentelekomcloud-docs/distributed-cache-service
+          - opentelekomcloud-docs/distributed-database-middleware
           - opentelekomcloud-docs/distributed-message-service
           - opentelekomcloud-docs/doc-exports
           - opentelekomcloud-docs/docs_on_docs
@@ -212,6 +214,7 @@
           - docs/bare-metal-server
           - docs/cloud-backup-recovery
           - docs/cloud-container-engine
+          - docs/cloud-container-instance
           - docs/cloud-eye
           - docs/cloud-search-service
           - docs/cloud-server-backup-service
@@ -224,6 +227,7 @@
           - docs/dedicated-host
           - docs/direct-connect
           - docs/distributed-cache-service
+          - docs/distributed-database-middleware
           - docs/distributed-message-service
           - docs/doc-exports
           - docs/docsportal
