@@ -178,6 +178,7 @@
           - stackmon/cloudmon
           - stackmon/cloudmon-plugin-loadbalancer
           - stackmon/cloudmon-metrics
+          - stackmon/status-dashboard
 
           ### OpenTelekomCloud TF modules
           - terraform-opentelekomcloud-modules/terraform-opentelekomcloud-vpc
