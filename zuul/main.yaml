@@ -147,6 +147,7 @@
           - opentelekomcloud-infra/ansible-role-telegraf
           - opentelekomcloud-infra/ansible-role-web-proxy-nginx
           - opentelekomcloud-infra/ansible-role-zookeeper
+          - opentelekomcloud-infra/backstage
           - opentelekomcloud-infra/cloudmon-plugin-smtp
           - opentelekomcloud-infra/crutch-house
           - opentelekomcloud-infra/csm-ansible-collection
