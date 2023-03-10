@@ -77,6 +77,7 @@
           - opentelekomcloud-docs/content-delivery-network
           - opentelekomcloud-docs/data-admin-service
           - opentelekomcloud-docs/data-ingestion-service
+          - opentelekomcloud-docs/data-lake-insight
           - opentelekomcloud-docs/data-replication-service
           - opentelekomcloud-docs/data-warehouse-service
           - opentelekomcloud-docs/dedicated-host
@@ -225,6 +226,7 @@
           - docs/content-delivery-network
           - docs/data-admin-service
           - docs/data-ingestion-service
+          - docs/data-lake-insight
           - docs/data-replication-service
           - docs/data-warehouse-service
           - docs/dedicated-host
