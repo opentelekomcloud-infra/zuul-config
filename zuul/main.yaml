@@ -181,6 +181,7 @@
           - stackmon/cloudmon
           - stackmon/cloudmon-plugin-loadbalancer
           - stackmon/cloudmon-metrics
+          - stackmon/otc-status-dashboard
           - stackmon/status-dashboard
 
           ### OpenTelekomCloud TF modules
