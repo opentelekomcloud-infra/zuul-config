@@ -1,12 +1,12 @@
 # Base image building jobs
 - job:
     name: zuul-config-build-image
-    parent: otc-build-docker-image
+    parent: otc-build-container-image
     abstract: true
 
 - job:
     name: zuul-config-upload-image
-    parent: otcinfra-upload-image-quay
+    parent: otcinfra-upload-container-images
     abstract: true
     vars:
       upload_docker_image_promote: false
