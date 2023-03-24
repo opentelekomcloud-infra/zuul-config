@@ -3,9 +3,10 @@
     description: Build a F36 image.
     parent: zuul-config-build-image
     vars: &zuul-f36_vars
-      docker_images:
+      container_images:
         - context: containers
-          dockerfile: Dockerfile.f36
+          container_filename: Dockerfile.f36
+          registry: quay.io
           repository: opentelekomcloud/zuul-fedora
           tags: ['36']
     files: &zuul-f36_files
@@ -18,3 +19,26 @@
     parent: zuul-config-upload-image
     vars: *zuul-f36_vars
     files: *zuul-f36_files
+
+- job:
+    name: zuul-config-build-image-f38
+    description: Build a F38 image.
+    parent: zuul-config-build-image
+    vars: &zuul-f38_vars
+      container_images:
+        - context: containers
+          container_filename: Dockerfile.f38
+          registry: quay.io
+          repository: opentelekomcloud/zuul-fedora
+          tags: ['38']
+    files: &zuul-f38_files
+      - containers/Dockerfile.f38
+      - zuul.d/container-images/fedora.yaml
+
+- job:
+    name: zuul-config-upload-image-f38
+    description: Build and upload a f38 image.
+    parent: zuul-config-upload-image
+    vars: *zuul-f38_vars
+    files: *zuul-f38_files
+
