@@ -81,6 +81,7 @@
           - opentelekomcloud-docs/data-lake-insight
           - opentelekomcloud-docs/data-replication-service
           - opentelekomcloud-docs/data-warehouse-service
+          - opentelekomcloud-docs/database-security-service
           - opentelekomcloud-docs/dedicated-host
           - opentelekomcloud-docs/direct-connect
           - opentelekomcloud-docs/distributed-cache-service
@@ -96,6 +97,7 @@
           - opentelekomcloud-docs/elastic-load-balancing
           - opentelekomcloud-docs/elastic-volume-service
           - opentelekomcloud-docs/enterprise-dashboard
+          - opentelekomcloud-docs/enterprise-router
           - opentelekomcloud-docs/gaussdb-mysql
           - opentelekomcloud-docs/gaussdb-nosql
           - opentelekomcloud-docs/gaussdb-opengauss
@@ -231,6 +233,7 @@
           - docs/data-lake-insight
           - docs/data-replication-service
           - docs/data-warehouse-service
+          - docs/database-security-service
           - docs/dedicated-host
           - docs/direct-connect
           - docs/distributed-cache-service
@@ -244,6 +247,7 @@
           - docs/elastic-cloud-server
           - docs/elastic-ip
           - docs/elastic-load-balancing
+          - docs/enterprise-router
           - docs/elastic-volume-service
           # - docs/enterprise-dashboard
           - docs/gaussdb-mysql
