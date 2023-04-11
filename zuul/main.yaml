@@ -183,7 +183,7 @@
           - stackmon/apimon-tests
           - stackmon/cloudmon
           - stackmon/cloudmon-plugin-loadbalancer
-          - stackmon/cloudmon-metrics
+          - stackmon/metrics-processor
           - stackmon/otc-status-dashboard
           - stackmon/status-dashboard
 
