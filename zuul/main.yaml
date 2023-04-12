@@ -65,6 +65,7 @@
           - opentelekomcloud-blueprints/docs
           ### OpenTelekomCloud Docs
           - opentelekomcloud-docs/anti-ddos
+          - opentelekomcloud-docs/api-gateway
           - opentelekomcloud-docs/application-operations-management
           - opentelekomcloud-docs/auto-scaling
           - opentelekomcloud-docs/bare-metal-server
@@ -81,6 +82,7 @@
           - opentelekomcloud-docs/data-lake-insight
           - opentelekomcloud-docs/data-replication-service
           - opentelekomcloud-docs/data-warehouse-service
+          - opentelekomcloud-docs/dataarts-studio
           - opentelekomcloud-docs/database-security-service
           - opentelekomcloud-docs/dedicated-host
           - opentelekomcloud-docs/direct-connect
@@ -217,6 +219,7 @@
         untrusted-projects:
           # Internal docs
           - docs/anti-ddos
+          - docs/api-gateway
           - docs/application-operations-management
           - docs/auto-scaling
           - docs/bare-metal-server
@@ -233,6 +236,7 @@
           - docs/data-lake-insight
           - docs/data-replication-service
           - docs/data-warehouse-service
+          - docs/dataarts-studio
           - docs/database-security-service
           - docs/dedicated-host
           - docs/direct-connect
