@@ -9,9 +9,9 @@ zookeeper-servers:
     port: 2281
 
 zookeeper-tls:
-  cert: /tls/client/zk.pem
-  key: /tls/client/zk.key
-  ca: /tls/client/ca.pem
+  cert: /tls/client/tls.crt
+  key: /tls/client/tls.key
+  ca: /tls/client/ca.crt
 
 diskimages:
   - name: base
