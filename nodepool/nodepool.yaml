@@ -5,13 +5,13 @@ webapp:
   port: 8005
 
 zookeeper-servers:
-  - host: zookeeper.zookeeper.svc.cluster.local
+  - host: zookeeper.zuul-ci.svc.cluster.local
     port: 2281
 
 zookeeper-tls:
-  cert: /tls/zk.pem
-  key: /tls/zk.key
-  ca: /tls/ca.pem
+  cert: /tls/client/zk.pem
+  key: /tls/client/zk.key
+  ca: /tls/client/ca.pem
 
 diskimages:
   - name: base
