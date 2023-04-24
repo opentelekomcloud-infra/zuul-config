@@ -166,6 +166,7 @@
           - opentelekomcloud-infra/docsportal
           - opentelekomcloud-infra/galera
           - opentelekomcloud-infra/gitstyring
+          - opentelekomcloud-infra/grafana-docs-monitoring
           - opentelekomcloud-infra/fluentd
           - opentelekomcloud-infra/identity-deploy
           - opentelekomcloud-infra/kapellmeister
