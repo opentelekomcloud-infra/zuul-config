@@ -76,6 +76,7 @@
           - opentelekomcloud-docs/cloud-eye
           - opentelekomcloud-docs/cloud-search-service
           - opentelekomcloud-docs/cloud-server-backup-service
+          - opentelekomcloud-docs/cloud-service-engine
           - opentelekomcloud-docs/cloud-trace-service
           - opentelekomcloud-docs/content-delivery-network
           - opentelekomcloud-docs/data-admin-service
@@ -231,6 +232,7 @@
           - docs/cloud-eye
           - docs/cloud-search-service
           - docs/cloud-server-backup-service
+          - docs/cloud-service-engine
           - docs/cloud-trace-service
           - docs/content-delivery-network
           - docs/data-admin-service
