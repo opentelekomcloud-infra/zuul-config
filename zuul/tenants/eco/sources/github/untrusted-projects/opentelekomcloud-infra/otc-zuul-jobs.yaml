@@ -1,0 +1,2 @@
+extra-config-paths:
+- zuul-tests.d/

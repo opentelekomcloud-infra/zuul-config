@@ -1,0 +1,3 @@
+conditions:
+- resource_access.zuul.roles: gl_admin
+name: gl_admin

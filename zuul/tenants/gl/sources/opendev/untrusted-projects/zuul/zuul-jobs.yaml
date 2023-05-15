@@ -1,0 +1,3 @@
+shadow:
+- ecosystem/zuul-project-config
+- opentelekomcloud-infra/otc-zuul-jobs

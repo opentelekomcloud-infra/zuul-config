@@ -1,0 +1,7 @@
+admin-rules:
+- admin
+- gl_admin
+exclude-unprotected-branches: true
+max-nodes-per-job: 5
+name: gl
+report-build-page: true

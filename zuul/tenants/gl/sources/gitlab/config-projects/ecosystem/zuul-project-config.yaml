@@ -1,0 +1,3 @@
+extra-config-paths:
+- zuul-tests.d/
+load-branch: main
