@@ -1,0 +1,3 @@
+conditions:
+- resource_access.zuul.roles: admin
+name: admin
