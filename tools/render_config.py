@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+import argparse
 from pathlib import Path
 import yaml
 
@@ -50,7 +51,17 @@ def merge(src: str):
 
 
 def main():
-    config = merge("zuul")
+    parser = argparse.ArgumentParser(
+        prog="Zuul tenant generator",
+        description="Render Zuul tenant configuration from elements",
+    )
+    parser.add_argument(
+        "--dir",
+        default="/etc/zuul-config/zuul",
+        help=("Base directory with configuration elements")
+    )
+    args = parser.parse_args()
+    config = merge(args.dir)
     print(yaml.dump(config))
 
 
