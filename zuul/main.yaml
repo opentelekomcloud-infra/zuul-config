@@ -57,7 +57,8 @@
           - opentelekomcloud/security-concept
           - opentelekomcloud/sphinx-opensearch
           - opentelekomcloud/swift-proxy
-          - opentelekomcloud/terraform-modules-opentelekomcloud
+          - opentelekomcloud/terraform-opentelekomcloud-project-factory
+          - opentelekomcloud/terraform-opentelekomcloud-modules
           - opentelekomcloud/terraform-provider-opentelekomcloud
           - opentelekomcloud/ui-driver-otc
           - opentelekomcloud/ui-cluster-driver-otc
