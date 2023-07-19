@@ -21,6 +21,28 @@
     files: *zuul-f36_files
 
 - job:
+    name: zuul-config-build-image-f37
+    description: Build a F37 image.
+    parent: zuul-config-build-image
+    vars: &zuul-f37_vars
+      container_images:
+        - context: containers
+          container_filename: Dockerfile.f37
+          registry: quay.io
+          repository: opentelekomcloud/zuul-fedora
+          tags: ['37']
+    files: &zuul-f37_files
+      - containers/Dockerfile.f37
+      - zuul.d/container-images/fedora.yaml
+
+- job:
+    name: zuul-config-upload-image-f37
+    description: Build and upload a f37 image.
+    parent: zuul-config-upload-image
+    vars: *zuul-f37_vars
+    files: *zuul-f37_files
+
+- job:
     name: zuul-config-build-image-f38
     description: Build a F38 image.
     parent: zuul-config-build-image

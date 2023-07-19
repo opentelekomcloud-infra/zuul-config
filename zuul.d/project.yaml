@@ -4,14 +4,14 @@
     check:
       jobs:
         - otc-tox-linters
-        - zuul-config-build-image-f36
+        - zuul-config-build-image-f37
         - zuul-config-build-image-f38
     gate:
       jobs:
         - otc-tox-linters
-        - zuul-config-build-image-f36
+        - zuul-config-build-image-f37
         - zuul-config-build-image-f38
     post:
       jobs:
-        - zuul-config-upload-image-f36
+        - zuul-config-upload-image-f37
         - zuul-config-upload-image-f38
