@@ -1,3 +1,4 @@
+# Fedora 36 docker image
 FROM quay.io/fedora/fedora:36-x86_64
  
 ENV XDG_CACHE_HOME=/root/.cache
