@@ -142,6 +142,7 @@ labels:
   - name: pod-fedora-35
   - name: pod-fedora-36
   - name: pod-fedora-37
+  - name: pod-fedora-38
   - name: pod-fedora-39
   - name: fedora-32
   - name: fedora-32-large
@@ -182,6 +183,11 @@ providers:
           - name: pod-fedora-37
             type: pod
             image: quay.io/opentelekomcloud/zuul-fedora:37
+            cpu: 2
+            memory: 2048
+          - name: pod-fedora-38
+            type: pod
+            image: quay.io/opentelekomcloud/zuul-fedora:38
             cpu: 2
             memory: 2048
           - name: pod-fedora-39
