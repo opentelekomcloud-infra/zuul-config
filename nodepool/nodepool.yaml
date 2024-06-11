@@ -74,7 +74,7 @@ diskimages:
 
   - name: centos-9-stream
     parent: base
-    pause: false
+    pause: true
     python-path: /usr/bin/python3
     release: '9-stream'
     elements:
@@ -117,7 +117,7 @@ diskimages:
   # ############ Debian #############
   - name: debian-buster
     parent: base-debuntu
-    pause: false
+    pause: true
     elements:
       - debian-minimal
     release: buster
