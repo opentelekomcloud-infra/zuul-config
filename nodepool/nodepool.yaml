@@ -150,8 +150,6 @@ labels:
   - name: fedora-35
   - name: fedora-35-large
   - name: rockylinux-8
-  - name: centos-9-stream
-  - name: debian-buster
   - name: debian-bullseye
   - name: ubuntu-focal
   - name: ubuntu-jammy
