@@ -10,7 +10,10 @@ RUN dnf update -y && dnf install -y iproute rsync git traceroute unzip bzip2 \
   libxml2-devel libxslt-devel texlive-background texlive texlive-fncychap \
   texlive-gnu-freefont texlive-titlesec texlive-tabulary texlive-framed \
   texlive-wrapfig texlive-upquote texlive-capt-of texlive-needspace \
-  texlive-polyglossia latexmk ImageMagick && \
+  texlive-polyglossia texlive-babel-english texlive-cmap texlive-kvoptions \
+  texlive-parskip texlive-pdftex texlive-tex-gyre texlive-xetex latexmk \
+  ImageMagick inkscape liberation-sans-fonts liberation-serif-fonts \
+  liberation-mono-fonts && \
   dnf clean all
 
 RUN ln -sf /bin/pip3 /bin/pip && /bin/pip3 install --user 'tox>=3.8.0' os-testr
