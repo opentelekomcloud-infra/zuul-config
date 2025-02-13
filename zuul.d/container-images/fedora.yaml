@@ -87,6 +87,26 @@
     files: *zuul-f39_files
 
 - job:
+    name: zuul-config-build-image-f40
+    description: Build a F40 image.
+    parent: zuul-config-build-image
+    vars: &zuul-f40_vars
+      container_images:
+        - context: containers
+          container_filename: Dockerfile.f40
+          registry: quay.io
+          repository: opentelekomcloud/zuul-fedora
+          tags: ['40']
+    files: &zuul-f40_files
+      - containers/Dockerfile.f40
+      - zuul.d/container-images/fedora.yaml
+
+- job:
+    name: zuul-config-upload-image-f40
+    description: Build and upload a f40 image.
+    parent: zuul-config-upload-image
+    vars: *zuul-f40_vars
+- job:
     name: zuul-config-build-image-f41
     description: Build a F41 image.
     parent: zuul-config-build-image
