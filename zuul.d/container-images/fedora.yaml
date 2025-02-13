@@ -106,6 +106,7 @@
     description: Build and upload a f40 image.
     parent: zuul-config-upload-image
     vars: *zuul-f40_vars
+
 - job:
     name: zuul-config-build-image-f41
     description: Build a F41 image.
