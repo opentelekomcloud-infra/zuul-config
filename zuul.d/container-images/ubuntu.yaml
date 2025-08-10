@@ -1,0 +1,22 @@
+- job:
+    name: zuul-config-build-image-u22
+    description: Build a U22 image.
+    parent: zuul-config-build-image
+    vars: &zuul-u22_vars
+      container_images:
+        - context: containers
+          container_filename: Dockerfile.u22
+          registry: quay.io
+          repository: opentelekomcloud/zuul-ubuntu
+          tags: ['22']
+    files: &zuul-u22_files
+      - containers/Dockerfile.u22
+      - zuul.d/container-images/ubuntu.yaml
+
+- job:
+    name: zuul-config-upload-image-u22
+    description: Build and upload a u22 image.
+    parent: zuul-config-upload-image
+    vars: *zuul-u22_vars
+    files: *zuul-u22_files
+
