@@ -9,6 +9,7 @@
         - zuul-config-build-image-f39
         - zuul-config-build-image-f40
         - zuul-config-build-image-f41
+        - zuul-config-build-image-u22
     gate:
       jobs:
         - otc-tox-linters
@@ -17,6 +18,7 @@
         - zuul-config-build-image-f39
         - zuul-config-build-image-f40
         - zuul-config-build-image-f41
+        - zuul-config-build-image-u22
     post:
       jobs:
         - zuul-config-upload-image-f37
@@ -24,3 +26,4 @@
         - zuul-config-upload-image-f39
         - zuul-config-upload-image-f40
         - zuul-config-upload-image-f41
+        - zuul-config-upload-image-u22
