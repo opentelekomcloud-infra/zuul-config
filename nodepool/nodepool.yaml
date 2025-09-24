@@ -80,8 +80,6 @@ diskimages:
     elements:
       - centos-minimal
       - epel
-    env-vars:
-      DIB_EPEL_DISABLED: '1'
 
   # ############ Ubuntu #############
   - name: ubuntu-bionic
