@@ -120,7 +120,7 @@ diskimages:
       - debian-minimal
     release: buster
     env-vars:
-      DIB_DISTRIBUTION_MIRROR: "http://ftp2.de.debian.org/debian"
+      DIB_DISTRIBUTION_MIRROR: "http://archive.debian.org/debian"
       DIB_DEBIAN_SECURITY_MIRROR: "http://debian.mirror.lrz.de/debian-security"
       DIB_DEBIAN_SECURITY_SUBPATH: ""
 
@@ -131,7 +131,7 @@ diskimages:
       - debian-minimal
     release: bullseye
     env-vars:
-      DIB_DISTRIBUTION_MIRROR: "http://ftp2.de.debian.org/debian"
+      DIB_DISTRIBUTION_MIRROR: "http://archive.debian.org/debian"
       DIB_DEBIAN_SECURITY_MIRROR: "http://debian.mirror.lrz.de/debian-security"
       DIB_DEBIAN_SECURITY_SUBPATH: ""
 
