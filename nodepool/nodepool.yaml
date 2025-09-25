@@ -143,6 +143,17 @@ diskimages:
       DIB_DEBIAN_SECURITY_MIRROR: "http://debian.mirror.lrz.de/debian-security"
       DIB_DEBIAN_SECURITY_SUBPATH: ""
 
+  - name: debian-bookworm
+    parent: base-debuntu
+    pause: false
+    elements:
+      - debian-minimal
+    release: bookworm
+    env-vars:
+      DIB_DISTRIBUTION_MIRROR: "http://ftp2.de.debian.org/debian"
+      DIB_DEBIAN_SECURITY_MIRROR: "http://debian.mirror.lrz.de/debian-security"
+      DIB_DEBIAN_SECURITY_SUBPATH: ""
+
 labels:
   - name: pod-fedora-latest
   - name: pod-fedora-35
@@ -163,6 +174,7 @@ labels:
   - name: centos-9-stream
   - name: debian-buster
   - name: debian-bullseye
+  - name: debian-bookworm
   - name: ubuntu-focal
   - name: ubuntu-jammy
 
@@ -232,6 +244,7 @@ providers:
       - name: centos-9-stream
       - name: debian-buster
       - name: debian-bullseye
+      - name: debian-bookworm
       - name: ubuntu-focal
       - name: ubuntu-jammy
     pools:
@@ -279,6 +292,10 @@ providers:
             key-name: nodepool
           - name: debian-bullseye
             diskimage: debian-bullseye
+            flavor-name: s2.large.2
+            key-name: nodepool
+          - name: debian-bookworm
+            diskimage: debian-bookworm
             flavor-name: s2.large.2
             key-name: nodepool
           - name: ubuntu-focal
