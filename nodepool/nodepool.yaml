@@ -61,6 +61,14 @@ diskimages:
       - fedora-container
     release: 35
 
+  - name: fedora-40
+    parent: base
+    pause: false
+    python-path: /usr/bin/python3
+    elements:
+      - fedora-container
+    release: 40
+
   - name: rockylinux-8
     parent: base
     pause: true
@@ -150,6 +158,7 @@ labels:
   - name: fedora-34
   - name: fedora-35
   - name: fedora-35-large
+  - name: fedora-40
   - name: rockylinux-8
   - name: centos-9-stream
   - name: debian-buster
@@ -218,6 +227,7 @@ providers:
     diskimages: &provider_diskimages
       - name: fedora-32
       - name: fedora-35
+      - name: fedora-40
       - name: rockylinux-8
       - name: centos-9-stream
       - name: debian-buster
@@ -250,6 +260,10 @@ providers:
           - name: fedora-35-large
             diskimage: fedora-35
             flavor-name: s2.xlarge.2
+            key-name: nodepool
+          - name: fedora-40
+            diskimage: fedora-40
+            flavor-name: s2.large.2
             key-name: nodepool
           - name: rockylinux-8
             diskimage: rockylinux-8
