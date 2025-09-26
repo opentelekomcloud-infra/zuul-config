@@ -21,6 +21,14 @@
         "coreutils": ""
        }
     },
+    "debian": {
+      "bookworm": {
+        "python-dev": "python-dev-is-python3",
+        "ntp": "chrony",
+        "ntpdate": "",
+        "coreutils": ""
+       }
+    },
     "ubuntu": {
       "focal": {
         "ntp": "",
