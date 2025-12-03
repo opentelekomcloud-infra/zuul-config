@@ -1,0 +1,4 @@
+exclude-branches:
+  - main
+include-branches:
+  - preprod
