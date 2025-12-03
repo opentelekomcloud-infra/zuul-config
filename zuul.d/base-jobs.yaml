@@ -1,0 +1,12 @@
+---
+- job:
+    name: base
+    parent: null
+    description: |
+      The base job for the preprod tenant.
+      All jobs ultimately inherit from this job.
+    timeout: 1800
+    nodeset:
+      nodes: []
+    secrets:
+      - otc_credentials
