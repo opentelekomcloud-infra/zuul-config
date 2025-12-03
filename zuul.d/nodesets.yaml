@@ -4,3 +4,9 @@
     nodes:
       - name: pod
         label: pod-fedora-latest
+
+- nodeset:
+    name: ubuntu-jammy
+    nodes:
+      - name: ubuntu-jammy
+        label: ubuntu-jammy
