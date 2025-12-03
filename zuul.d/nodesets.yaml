@@ -1,0 +1,6 @@
+---
+- nodeset:
+    name: pod-fedora-latest
+    nodes:
+      - name: pod
+        label: pod-fedora-latest
