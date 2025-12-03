@@ -1,4 +1,4 @@
 name: preprod
-max-nodes-per-job: 5
+max-nodes-per-job: 1
 exclude-unprotected-branches: false
 report-build-page: true
