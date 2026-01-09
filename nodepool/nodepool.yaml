@@ -236,6 +236,7 @@ providers:
     driver: openstack
     cloud: otcci-pool1
     boot-timeout: 120
+    ignore-provider-quota: true
     diskimages: &provider_diskimages
       - name: fedora-32
       - name: fedora-35
@@ -310,6 +311,7 @@ providers:
     driver: openstack
     cloud: otcci-pool2
     boot-timeout: 120
+    ignore-provider-quota: true
     diskimages: *provider_diskimages
     pools:
       - name: pool2
@@ -322,6 +324,7 @@ providers:
     driver: openstack
     cloud: otcci-pool3
     boot-timeout: 120
+    ignore-provider-quota: true
     diskimages: *provider_diskimages
     pools:
       - name: pool3

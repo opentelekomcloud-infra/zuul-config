@@ -1,5 +1,11 @@
 ---
 - nodeset:
+    name: pod-debian
+    nodes:
+      - name: debian
+        label: pod-debian
+
+- nodeset:
     name: pod-fedora-latest
     nodes:
       - name: pod
