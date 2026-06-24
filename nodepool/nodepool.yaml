@@ -171,8 +171,6 @@ labels:
   - name: fedora-35-large
   - name: fedora-40
   - name: rockylinux-8
-  - name: centos-9-stream
-  - name: debian-buster
   - name: debian-bullseye
   - name: debian-bookworm
   - name: ubuntu-focal
