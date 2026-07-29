@@ -1,0 +1,9 @@
+# system-config is private (GitHub Free plan) so branch protection is
+# unavailable and every branch reports as unprotected. The eco tenant sets
+# exclude-unprotected-branches: true, which was silently dropping all of
+# system-config's config (infra-prod-* jobs + periodic service-deploy
+# project) once the repo went private. Override it here and pin to main
+# (the branch the infra-prod jobs live on) to avoid parsing every branch.
+exclude-unprotected-branches: false
+include-branches:
+  - main
